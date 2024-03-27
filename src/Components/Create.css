@@ -1,0 +1,58 @@
+.create{
+    
+    max-width: 500px;
+    margin: 10px auto;
+    border: 1px solid rgb(180, 179, 179);
+    border-radius: 5px ;
+
+}
+
+.social-card-pic img {
+    max-width: 45px;
+    max-height: 45px;
+    border-radius: 50%;
+}
+.social-card-header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 50px;
+}
+
+.first-div{
+    border: 1px solid rgb(180, 179, 179);
+}
+
+.create-header{
+    display: flex;
+}
+
+
+.userDetails{
+    border: 1px solid rgb(180, 179, 179);
+}
+
+textarea{
+    width: 70%;
+    border: none;
+    outline:none;
+}
+
+#Post-btn{
+    border:none;
+    color: #6cb8eb;
+    background: none;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+
+#output{
+    margin-top: 6px;
+    width: 300px;
+    border: none;
+    outline: none;
+}

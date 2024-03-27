@@ -1,0 +1,45 @@
+ 
+.navbar img{
+    width: 10%; 
+    object-fit: contain; 
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 5px 5px rgb(224, 208, 208)
+}
+
+ul{
+    display: flex;
+    align-items: baseline;
+}
+
+li{
+    list-style:none;
+    padding: 1px 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(29, 21, 21);
+    font-size: 19px;
+}
+
+.navbarLogOutBtn{
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 13px 25px ;
+    font-size: 0.7rem;
+    border: none;
+    color: white;
+    background: #e4193e;
+    border-radius:  16px;
+    margin-left: 20px;
+    transition : all 0.25s ease;
+}
+
+.navbarLogOutBtn:hover{
+    transform:translateY(-4px);
+    box-shadow: 0 10px 20px -10px rgba(228, 25, 45, 0.6);
+}

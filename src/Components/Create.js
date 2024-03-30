@@ -33,7 +33,7 @@ useEffect(() =>{
 
   //Saving post into MongoDB
   if(url) {
-    fetch("http://localhost:5000/create",{
+    fetch(" https://instagram-clone-backend-vka1.onrender.com/create",{
       method:"post",
       headers:{
         "Content-type": "application/json",

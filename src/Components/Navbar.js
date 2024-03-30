@@ -13,7 +13,7 @@ export default function Navbar({signin}) {
   
   useEffect(() => {
     console.log(JSON.parse(localStorage.getItem("user"))?._id, localStorage.getItem("jwt"))
-    fetch(`http://localhost:5000/user/${JSON.parse(localStorage.getItem("user"))?._id}`, {
+    fetch(` https://instagram-clone-backend-vka1.onrender.com/user/${JSON.parse(localStorage.getItem("user"))?._id}`, {
      headers:{ 
        Authorization: "Bearer " + localStorage.getItem("jwt"),
      },

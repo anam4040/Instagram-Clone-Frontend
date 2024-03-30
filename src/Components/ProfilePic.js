@@ -29,7 +29,7 @@ const postDetails = ()=>{
     
   //Saving post into MongoDB
 
-    fetch("http://localhost:5000/uploadProfilePic",{
+    fetch(" https://instagram-clone-backend-vka1.onrender.com/uploadProfilePic",{
       method:"put",
       headers:{
         "Content-type": "application/json",

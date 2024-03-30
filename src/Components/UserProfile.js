@@ -12,7 +12,7 @@ export default function UserProfile() {
  
   // Function to follow user
   const followUser = (userId)=>{
-    fetch("http://localhost:5000/follow",{
+    fetch(" https://instagram-clone-backend-vka1.onrender.com/follow",{
       method:"put",
       headers:{ 
         "Content-type":"application/json",
@@ -32,7 +32,7 @@ export default function UserProfile() {
 
 // to unfollow user
 const unfollowUser = (userId)=>{
-  fetch("http://localhost:5000/unfollow",{
+  fetch(" https://instagram-clone-backend-vka1.onrender.com/unfollow",{
     method:"put",
     headers:{ 
       "Content-type":"application/json",
@@ -54,7 +54,7 @@ const unfollowUser = (userId)=>{
 
 
   useEffect(() => {
-   fetch(`http://localhost:5000/user/${userid}`, {
+   fetch(` https://instagram-clone-backend-vka1.onrender.com/user/${userid}`, {
     headers:{ 
       Authorization: "Bearer " + localStorage.getItem("jwt"),
     },

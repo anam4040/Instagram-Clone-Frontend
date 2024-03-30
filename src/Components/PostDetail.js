@@ -15,7 +15,7 @@ export default function PostDetail({item, toogleDetails}) {
   const removePost = async (postId)=>{
     if(window.confirm("Do you really want to delete this post?")){
        
-      const res = await   fetch(`http://localhost:5000/deletePost/${postId}`, {
+      const res = await   fetch(` https://instagram-clone-backend-vka1.onrender.com/deletePost/${postId}`, {
             method:"delete",
             headers: {
                 "Content-Type" : "application/json",

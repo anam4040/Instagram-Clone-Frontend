@@ -31,7 +31,7 @@ export default function SignIn() {
      
    //Data sending to Server while signing in
 
-   fetch("http://localhost:5000/signin", {
+   fetch(" https://instagram-clone-backend-vka1.onrender.com/signin", {
       method:"post",
       headers: {
          "Content-Type" : "application/json"

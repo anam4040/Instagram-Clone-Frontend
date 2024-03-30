@@ -25,7 +25,7 @@ export default function MyFollowingPost() {
 
     //Fetching all posts (My Following Posts)
 
-    fetch("http://localhost:5000/myfollowingpost",{
+    fetch(" https://instagram-clone-backend-vka1.onrender.com/myfollowingpost",{
       headers:{
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -54,7 +54,7 @@ export default function MyFollowingPost() {
 //Integrating Like post & unlike post Api
 
   const likePost =(id)=>{
-     fetch("http://localhost:5000/like" , {
+     fetch(" https://instagram-clone-backend-vka1.onrender.com/like" , {
       method:"put",
       headers: {
         "Content-Type" : "application/json",
@@ -79,7 +79,7 @@ export default function MyFollowingPost() {
   };
 
   const unlikePost =(id)=>{
-    fetch("http://localhost:5000/unlike" , {
+    fetch(" https://instagram-clone-backend-vka1.onrender.com/unlike" , {
      method:"put",
      headers: {
        "Content-Type" : "application/json",
@@ -106,7 +106,7 @@ export default function MyFollowingPost() {
  //Function for making comment
 
  const makeComment=(text, id)=>{
-  fetch("http://localhost:5000/comment" , {
+  fetch(" https://instagram-clone-backend-vka1.onrender.com/comment" , {
     method:"put",
     headers: {
       "Content-Type" : "application/json",

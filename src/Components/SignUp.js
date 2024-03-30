@@ -38,7 +38,7 @@ export default function SignUp() {
      
    //Data getting send to Server
 
-   fetch("http://localhost:5000/signup", {
+   fetch(" https://instagram-clone-backend-vka1.onrender.com/signup", {
       method:"post",
       headers: {
          "Content-Type" : "application/json"

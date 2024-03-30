@@ -33,7 +33,7 @@ export default function Profile() {
 
 
   useEffect(() => {
-   fetch(`http://localhost:5000/user/${JSON.parse(localStorage.
+   fetch(` https://instagram-clone-backend-vka1.onrender.com/user/${JSON.parse(localStorage.
    getItem("user"))._id}`, {
     headers:{ 
       Authorization: "Bearer " + localStorage.getItem("jwt"),

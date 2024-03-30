@@ -26,7 +26,7 @@ export default function Home() {
 
     //Fetching all posts
 
-    fetch("http://localhost:5000/allposts",{
+    fetch(" https://instagram-clone-backend-vka1.onrender.com/allposts",{
       headers:{
         Authorization:"Bearer " + localStorage.getItem("jwt"),
       },
@@ -55,7 +55,7 @@ export default function Home() {
 //Integrating Like post & unlike post Api
 
   const likePost =(id)=>{
-     fetch("http://localhost:5000/like" , {
+     fetch(" https://instagram-clone-backend-vka1.onrender.com/like" , {
       method:"put",
       headers: {
         "Content-Type" : "application/json",
@@ -80,7 +80,7 @@ export default function Home() {
   };
 
   const unlikePost =(id)=>{
-    fetch("http://localhost:5000/unlike" , {
+    fetch(" https://instagram-clone-backend-vka1.onrender.com/unlike" , {
      method:"put",
      headers: {
        "Content-Type" : "application/json",
@@ -107,7 +107,7 @@ export default function Home() {
  //Function for making comment
 
  const makeComment=(text, id)=>{
-  fetch("http://localhost:5000/comment" , {
+  fetch(" https://instagram-clone-backend-vka1.onrender.com/comment" , {
     method:"put",
     headers: {
       "Content-Type" : "application/json",

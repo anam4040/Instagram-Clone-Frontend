@@ -98,6 +98,10 @@ useEffect(()=>{
         <div  style={{ borderTop:"1px solid #00000030"}}>
             <button 
               className="upload-btn" 
+              onClick={()=>{
+                setUrl(null);
+                postPic();
+              }}
               style={{color:"#ED4956"}}>
               {""}
                Remove current photo

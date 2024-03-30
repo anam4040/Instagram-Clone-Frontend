@@ -8,11 +8,26 @@ export default function Create() {
 const [body, setBody] = useState("");
 const [image, setImage] = useState("");
 const [url, setUrl] = useState("");
+const[user, setUser] = useState("");
+
+
+
+var picLink = "https://cdn-icons-png.flaticon.com/128/3177/3177440.png";
+
 const redirect = useNavigate()
 
 //Toast Functions(its the alphabet O not zero in notifyO)
 const notifyO = (message) => toast.error(message);
 const notify1 = (message) => toast.success(message);
+
+
+
+useEffect(() => {
+  const userData = localStorage.getItem("userDetails");
+setUser(JSON.parse(userData));
+ }, [localStorage]);
+
+
 
 useEffect(() =>{
 
@@ -77,6 +92,7 @@ const postDetails = ()=>{
         
 
   return (
+    <div className="create-bg">
     <div className="create">
       
      <div className = "create-header">
@@ -106,11 +122,22 @@ const postDetails = ()=>{
 
         <div className="social-card-header">
 
-          <div className= "social-card-pic">
+          {/* <div className= "social-card-pic">
             <img src="https://images.unsplash.com/photo-1556740772-1a741367b93e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width={45} height={45} alt=""/>
+          </div> */}
+
+          <div className= "social-card-pic">
+          <img className="profile-pic" 
+          src={user.Photo ? user.Photo : picLink} alt=""/>
           </div>
 
-           <h5>Anam</h5>
+        
+
+
+           <h5>{JSON.parse(localStorage.getItem("user")).name}</h5>
+
+           {/* <h5>Anam</h5> */}
+
 
         </div>
 
@@ -126,6 +153,7 @@ const postDetails = ()=>{
 
      </div>
 
+    </div>
     </div>
   );
 }

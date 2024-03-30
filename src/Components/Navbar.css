@@ -1,4 +1,4 @@
- 
+
 .navbar img{
     width: 10%; 
     object-fit: contain; 
@@ -7,17 +7,41 @@
 .navbar{
     display: flex;
     justify-content: space-around;
-    box-shadow: 1px 5px 5px rgb(224, 208, 208)
+    box-shadow: 1px 5px 5px rgb(224, 208, 208);
+   
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    background-size: 600% 600%;
+    animation: gradientBG 10s ease infinite;
+
+
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.nav-mobile{
+    display: none;
 }
 
 ul{
     display: flex;
     align-items: baseline;
+    
 }
 
 li{
     list-style:none;
     padding: 1px 20px;
+    font-weight: bolder;
 }
 
 a{
@@ -43,3 +67,32 @@ a{
     transform:translateY(-4px);
     box-shadow: 0 10px 20px -10px rgba(228, 25, 45, 0.6);
 }
+
+
+@media screen and (max-width:800px){
+    #insta-logo {
+        display: none;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .nav-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px -2px 5px #fff ;
+    }
+    .nabar ul {
+        margin: 0 ;
+        padding: 10px 0px ;
+    }
+    
+}
+

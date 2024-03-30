@@ -159,7 +159,7 @@ export default function Home() {
     </div>
 
       <div className="card-image">
-         <img  src={posts.photo} width={338} height={338} alt="" />
+         <img className="post-img" src={posts.photo}  alt="" />
       </div>
 
 

@@ -1,3 +1,25 @@
+/* .home{
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    background-size: 600% 600%;
+    animation: gradientBG 10s ease infinite;
+
+
+} */
+
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
 .card{
      max-width: 500px;
      height: max-content;
@@ -9,6 +31,11 @@
 
 .card-header {
     display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
 }
 
 
@@ -42,9 +69,14 @@
 .add-comment{
     display:flex;
     align-items: center;
+
     
 }
 
+.add-comment span {
+    padding: 5px;
+
+}
 
 .add-comment input{
     border: none;
@@ -56,12 +88,22 @@
 .comment{
     font-weight: bolder;
     cursor: pointer;
-    color: #6cb8eb;
+    color: #fff;
     border: none;
-    background-color: none;
+    background-color: #423dcf;
+    padding: 12px 10px ;
 }
 
-
+.post-img{
+    width: 338px;
+    height: 338px;
+}
+@media screen and (max-width:428px){
+    .post-img{
+        width: 252px;
+        height: 252px;
+    }
+}
 .material-symbols-outlined-red {
     color: red;
   font-variation-settings:
@@ -150,6 +192,8 @@
 }
 
 
-
+a{
+    color: #fff;
+}
 
 

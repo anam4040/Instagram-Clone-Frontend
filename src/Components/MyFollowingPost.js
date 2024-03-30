@@ -158,7 +158,7 @@ export default function MyFollowingPost() {
     </div>
 
       <div className="card-image">
-         <img src={posts.photo} alt="" />
+         <img src={posts.photo} width={338} height={338} alt="" />
       </div>
 
 

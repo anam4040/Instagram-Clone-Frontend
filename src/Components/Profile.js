@@ -52,6 +52,7 @@ export default function Profile() {
 
 
   return (
+    <div className="profile-bg">
     <div className="profile">
 
       <div className="profile-content">
@@ -108,6 +109,7 @@ export default function Profile() {
         <ProfilePic  changeprofile={changeprofile} />
       }
 
+    </div>
     </div>
   );
 }

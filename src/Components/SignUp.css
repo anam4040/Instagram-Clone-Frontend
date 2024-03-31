@@ -30,6 +30,10 @@
     margin: 0px 41px 21px 41px;
 }
 
+.paraSignin{
+    color: rgb(39, 41, 39);
+}
+
 input{
     outline:none;
     width: 100%;
@@ -58,7 +62,7 @@ input{
 }
 
 .formB{
-    background-color: white;
+    background-color: rgb(238, 228, 228);
     padding: 20px;
     margin-top: 5px;
     border: 1px solid rgb(77, 75, 75);

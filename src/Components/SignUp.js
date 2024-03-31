@@ -147,7 +147,10 @@ export default function SignUp() {
         </div>
 
          <div className='formB'>
-            Have an account?
+            <p className="paraSignin"
+            style={{fontSize:"16px"}}
+            > Have an account?</p>
+            
             <Link to="/SignIn">
                <span style={{color: "blue", cursor: "pointer"}}>
                    Sign In
